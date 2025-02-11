@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #fac400;
+  padding: 1rem;
+}
+
+.header__nav_list {
+  display: flex;
+  gap: 2rem;
+}
+
+.header__nav {
+    &_item a {
+      text-transform: uppercase;
+      color: brown;
+    }
+    &_link--button {
+      background: white;
+      padding: 1rem;
+      color: red;
+      border-radius: 5px;
+      &:hover {
+        background: red;
+     }
+  }
+}
+
+.header__logo_image {
+  height: 4rem;
+}
+
+h1 {
+  font-size: 0; //fallait donner une taille à l'image logo pour que ça marche
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.min.css">
+  <title>Lego homepage</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__logo">
+        <h1 class="header__title">
+          <a href="" class="header__link"><img src="https://assets.codepen.io/87353/brand-lego.svg" alt="Logo LégoMagic"
+              class="header__logo_image">Lego</a>
+        </h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav_list">
+          <li class="header__nav_item"><a href="https://lego.com/accueil" class="header__nav_link">Boutique</a></li>
+          <li class="header__nav_item"><a href="https://lego.com/produits" class="header__nav_link">Découvrir</a></li>
+          <li class="header__nav_item"><a href="https://lego.com/aide" class="header__nav_link">Aide</a></li>
+          <li class="header__nav_item"><a href="https://lego.com/panier" class="header__nav_link">Panier</a></li>
+          <li class="header__nav_item"><a href="https://lego.com/nouveautes"
+              class="header__nav_link header__nav_link--button">Nouveautés</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="featured_product">
+
+        <div class="featured_product__details">
+          <h2 class="featured_product__title">Des possibilités de jeu infinies</h2>
+          <p class="featured_product__description">Les enfants dès 6 ans vont adorer construire les superbes modèles,
+            puis vivre des aventures intergalactiques passionnantes.</p>
+
+          <div class="featured_product__purchase">
+            <span class="featured_product__price">249,99 €</span>
+            <button class="featured_product__button" onclick="ajouterAuPanier()">Ajouter au Panier</button>
+          </div>
+        </div>
+
+        <div class="featured_product__image_container">
+          <picture>
+            <source
+              srcset="https://www.lego.com/cdn/cs/set/assets/blte9113631b9237033/31134_Hero5_Standard_Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=1.5"
+              media="(min-width: 1200px)">
+            <source
+              srcset="https://www.lego.com/cdn/cs/set/assets/blte9113631b9237033/31134_Hero5_Standard_Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=1.5"
+              media="(min-width: 768px)">
+            <img
+              src="https://www.lego.com/cdn/cs/set/assets/blte9113631b9237033/31134_Hero5_Standard_Large.jpg?fit=crop&format=webply&quality=80&width=1600&height=500&dpr=1.5"
+              alt="Navette Creator" class="featured_product__image">
+          </picture>
+        </div>
+      </section>
+
+      <section class="product_list">
+        <h2 class="product_list__title">Autres Sets LEGO</h2>
+        <div class="product_list__container">
+          <div class="product">
+            <picture>
+              <source srcset="star-wars-hq.jpg" media="(min-width: 1200px)">
+              <source srcset="star-wars-mq.jpg" media="(min-width: 768px)">
+              <img class="product__image" src="star-wars-lq.jpg" alt="LEGO Star Wars">
+            </picture>
+            <h3 class="product__title">LEGO Star Wars</h3>
+            <p class="product__price">129,99 €</p>
+            <button class="product__button" onclick="ajouterAuPanier()">Acheter</button>
+          </div>
+          <div class="product">
+            <picture>
+              <source srcset="technic-hq.jpg" media="(min-width: 1200px)">
+              <source srcset="technic-mq.jpg" media="(min-width: 768px)">
+              <img src="technic-lq.jpg" alt="LEGO Technic" class="product__image">
+            </picture>
+            <h3 class="product__title">LEGO Technic</h3>
+            <p class="product__price">179,99 €</p>
+            <button class="product__button" onclick="ajouterAuPanier()">Acheter</button>
+          </div>
+          <div class="product">
+            <picture>
+              <source srcset="architecture-hq.jpg" media="(min-width: 1200px)">
+              <source srcset="architecture-mq.jpg" media="(min-width: 768px)">
+              <img src="architecture-lq.jpg" alt="LEGO Architecture" class="product__image">
+            </picture>
+            <h3 class="product__title">LEGO Architecture</h3>
+            <p class="product__price">89,99 €</p>
+            <button class="product__button" onclick="ajouterAuPanier()">Acheter</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main_footer">
+      <div class="main_footer__container">
+        <div class="main_footer__sections">
+
+          <div class="main_footer__section">
+            <h4 class="main_footer__title">Acheter</h4>
+            <ul class="main_footer__list">
+              <li class="main_footer__item"><a href="#" class="main_footer__link">Nouveautés</a></li>
+              <li class="main_footer__item"><a href="#" class="main_footer__link">Promotions</a></li>
+              <li class="main_footer__item"><a href="#" class="main_footer__link">Séries Spéciales</a></li>
+              <li class="main_footer__item"><a href="#" class="main_footer__link">Catalogues</a></li>
+            </ul>
+          </div>
+
+          <div class="main_footer__section">
+            <h4 class="main_footer__title">Services</h4>
+            <ul class="main_footer__list">
+              <li class="main_footer__item"><a href="#" class="main_footer__link">Mon Compte</a></li>
+              <li class="main_footer__item"><a href="#" class="main_footer__link">Service Client</a></li>
+              <li class="main_footer__item"><a href="#" class="main_footer__link">Livraison</a></li>
+              <li class="main_footer__item"><a href="#" class="main_footer__link">Retours</a></li>
+            </ul>
+          </div>
+
+          <div class="main_footer__section">
+            <h4 lass="main_footer__title">À Propos</h4>
+            <ul class="main_footer__list">
+              <li class="main_footer__item"><a href="#" class="main_footer__link">Notre Histoire</a></li>
+              <li class="main_footer__item"><a href="#" class="main_footer__link">Recrutement</a></li>
+              <li class="main_footer__item"><a href="#" class="main_footer__link">Actualités</a></li>
+              <li class="main_footer__item"><a href="#" class="main_footer__link">Développement Durable</a></li>
+            </ul>
+          </div>
+
+          <div class="main_footer__section newsletter">
+            <h4>Restez Informé</h4>
+            <p>Inscrivez-vous à notre newsletter</p>
+            <form method="post" action="send.php">
+              <label class="newsletter__label" for="email">Votre email</label>
+              <input class="newsletter__input" type="email" id="email" placeholder="Votre email" required>
+              <button class="newsletter__button" type="submit">S'inscrire</button>
+            </form>
+          </div>
+        </div>
+        <div class="main_footer__bottom">
+          <div class="main_footer__legal">
+            <a href="#">Mentions Légales</a>
+            <a href="#">Politique de Confidentialité</a>
+            <a href="#">Conditions Générales de Vente</a>
+          </div>
+          <div class="main_footer__social">
+            <a href="#" class="social__icon">Facebook</a>
+            <a href="#" class="social__icon">Instagram</a>
+            <a href="#" class="social__icon">Twitter</a>
+            <a href="#" class="social__icon">YouTube</a>
+          </div>
+          <div class="main_footer__copyright">
+            <p> 2023 LégoMagic. Tous droits réservés.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
